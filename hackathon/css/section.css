@@ -1,0 +1,102 @@
+section{
+    background-color: rgba(230, 247, 255, 0.911);
+    display: flex;
+    justify-content: center;
+}
+.h1{
+    display: flex;
+    font-size: 160%;
+    font-family:'Poppins', sans-serif;
+}
+li{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-left: 12%;  
+}
+.h2{
+    display: flex;
+    font-size: 100%;
+    color: rgb(71, 71, 71);
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+.h3{
+        display: flex;
+        font-size: 100%;
+        color: rgb(71, 71, 71);
+        font-family:'Poppins', sans-serif;
+        margin-bottom: 5%;
+        justify-content: center;
+}
+
+.hr-1{
+     width: 75%;
+     margin-left: 10%;
+}
+.space-2{
+    margin-top: 5%;
+}
+.space-3{
+    margin-top: 10%;
+}
+.flex-body{
+    display: flex;
+    height: 300%;
+    width: 500%;
+}
+.flex-bg{
+    display: flex;
+    justify-content: center;
+}
+.flex-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(230, 247, 255, 0.911) ;
+}
+
+.fname-box{
+    margin-top: 3%;
+    padding: 5px;
+    border: rgb(141, 141, 141);
+    border-radius: 5px;
+}
+.lname-box{
+    margin-top: 12%;
+    padding: 5px;
+    border: rgb(141, 141, 141);
+    border-radius: 5px;
+}
+.email-box{
+    font-family: 'Arial', sans-serif;
+    margin-top: 3%;
+    padding: 5px;
+    width: 100%;
+    border: rgb(105, 105, 105);
+    border-radius: 5px;
+}
+.address-box{
+    margin-top: 3%;
+    padding: 5px;
+    width: 100%;
+    border: rgb(105, 105, 105);
+    border-radius: 5px;
+}
+.phone-box{
+    margin-top: 5%;
+    margin-bottom: 50%;
+    padding: 5px;
+    width: 100%;
+    border: rgb(105, 105, 105);
+    border-radius: 5px;
+}
+.pincode-box{
+    margin-top: 5%;
+    margin-bottom: 50%;
+    padding: 5px;
+    width: 100%;
+    border: rgb(105, 105, 105);
+    border-radius: 5px;
+}

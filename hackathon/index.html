@@ -1,0 +1,110 @@
+<html ng-app="athapp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Portal</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="/js/angular.min.js"></script>
+  <script src="/js/app.js"></script>
+</head>
+<body>
+  <div ng-controller="cntrl">
+    <header>
+      <h1></h1>
+      <div class="flexbox">
+        <div class="flex1">AADHAR ONLINE PORTAL &nbsp;</div>
+      </div>
+    </header>
+    <section>
+      <div class="space-1">
+        <div class="h1">
+          <marquee width="100%" scrollamount="60" scrolldelay="600">Welcome to our Aadhar Online Portal!
+          </marquee>
+        </div>
+        <div class="hr-1"><br>
+          <hr>
+        </div>
+        <br>
+        <div class="h2">
+          <ul>
+            <li>Through our ‘digital first’ approach and The Deal we are enabling donar to transact with us online to
+              help us updating address.</li><br />
+            <li>As part of this,Updating Address are no longer issued and to view your updated address you will need to
+              access the Landlord Online Portal. If you haven’t already updated please update now.</li>
+          </ul>
+        </div>
+        <hr class="hr-1">
+        <div class="flex-main">
+          <form name="dataform" action="php/link-data.php" method="post">
+            <div class="shadow overflow-hidden sm:rounded-md">
+
+              <div class="flex-2">
+                <div class="grid grid-cols-5 gap-6">
+                  <div class="col-span-6 sm:col-span-3">
+                    <div class="space-2">
+                      <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                      <input type="text" name="firstname" id="first-name" autocomplete="given-name" class="fname-box">
+                    </div>
+                  </div>
+                  <div class="space-3">
+                    <div class="col-span-6 sm:col-span-3">
+                      <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                      <input type="text" name="lastname" id="last-name" autocomplete="family-name" class="lname-box">
+                    </div>
+                  </div>
+                  <div class="col-span-6 sm:col-span-4">
+                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email address<span
+                        style="font-family: 'Poppins';color: rgb(204, 0, 0); margin-left: 2%;;">*</span></label>
+                    <input type="email" name="email" id="email-address" autocomplete="email" class="email-box">
+                  </div>
+                  <div class="col-span-6">
+                    <label for="street-address" class="block text-sm font-medium text-gray-700"> Previous
+                      Address</label>
+                    <input type="text" name="oldaddress" id="street-address" autocomplete="street-address"
+                      class="address-box">
+                  </div>
+                  <div class="col-span-6">
+                    <label for="street-address" class="block text-sm font-medium text-gray-700"> New/Update
+                      Address</label>
+                    <input type="text" name="newaddress" id="newaddress" autocomplete="newaddress"
+                      class="address-box">
+                  </div>
+
+                  <div class="col-span-3 sm:col-span-2 lg:col-span-2">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="number" name="phone" id="phone" autocomplete="phone" class="phone-box">
+                  </div>
+
+                  <div class="col-span-3 sm:col-span-3 lg:col-span-2">
+                    <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
+                    <input type="number" name="pincode" id="postal-code" autocomplete="postal-code"
+                      class="pincode-box">
+                  </div>
+                
+              </div>
+            </div>
+
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+              <button type="submit" name="save" value="Submit"
+                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Save
+              </button>
+            </div>
+        </div>
+        </form>
+      </div>
+  </div>
+
+  </section>
+
+
+</body>
+
+</html>
